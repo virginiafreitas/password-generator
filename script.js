@@ -52,3 +52,17 @@ function generatePassword() {
             alert("Select at least one type of character.");
             return;
           }
+
+  // Create a foorloop that runs passLength number of times, selecting a single random character from the array
+  for (var i=0; i < passLength ; i++) {
+    var randomIndex = Math.floor(Math.random()*characterPool.length);
+    var randomValue = characterPool[randomIndex];
+    password = password + randomValue // append generated character to the previous generated character
+  }
+
+// calls the function password
+return password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
