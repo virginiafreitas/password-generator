@@ -31,14 +31,24 @@ The project aims to develop a password generation program tailored for business 
 9. After all 5 questions are selected, the password will be generated and displayed in the dashed box.
 
     ![alt text](assets/images/screenshot1.png)
+   ![screenshot1](https://github.com/virginiafreitas/password-generator/assets/137131281/7a0cd560-4435-4ae5-b64c-32472279378f)
+
 
     ![alt text](assets/images/screenshot1.png)
+   ![screenshot2](https://github.com/virginiafreitas/password-generator/assets/137131281/fb1464db-a2e1-4ac3-b613-114ee7a8d611)
+
 
     ![alt text](assets/images/screenshot1.png)
+   ![screenshot3](https://github.com/virginiafreitas/password-generator/assets/137131281/e017f421-29eb-452a-bf6d-ddc2cb043504)
+
 
     ![alt text](assets/images/screenshot1.png)
+   ![screenshot4](https://github.com/virginiafreitas/password-generator/assets/137131281/33a91048-4e37-465d-b6ce-98dab9c82244)
+
 
     ![alt text](assets/images/screenshot1.png)
+   ![screenshot5](https://github.com/virginiafreitas/password-generator/assets/137131281/289b1a6c-d373-4357-8c60-142accdeae5f)
+
 
 
 ## Credits
