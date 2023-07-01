@@ -15,7 +15,6 @@ function writePassword() { // creates function "writePassword"
     passwordText.value = password;   //setting value to password
   }
 
-  
 // Creates function generatePassword that asks for the number of characters desired, returns alert message if it does not fulfill requirements and generates password string
 function generatePassword() {
   var password = ''   //Create password variable that is an empty string
@@ -27,3 +26,29 @@ function generatePassword() {
         alert("Password length must be a number between 8 and 128 characters. Try again.");
         return
       }
+
+        // concatenates the arrays of only variables that confirmed yes/true, and return to the beginning if all variables confirmed no/false
+        var hasLower = confirm("Include lowercase?")
+          if (hasLower === true) {
+            characterPool = characterPool.concat(lowerCase)
+          }
+
+        var hasUpper = confirm("Include uppercase?")
+          if (hasUpper === true)  {
+            characterPool = characterPool.concat(upperCase)
+          }       
+
+        var hasNumbers = confirm("Include numbers?")
+          if (hasNumbers === true)  {
+            characterPool = characterPool.concat(numbers)
+          }  
+
+        var hasSpecialCharacters = confirm("Include special characters?")
+          if (hasSpecialCharacters === true)     {
+            characterPool = characterPool.concat(specialCharacters)
+          }     
+
+          if (hasLower === false && hasUpper === false && hasNumbers === false && hasSpecialCharacters === false) {
+            alert("Select at least one type of character.");
+            return;
+          }
