@@ -14,3 +14,16 @@ function writePassword() { // creates function "writePassword"
     var passwordText = document.querySelector("#password");   // creates variable "passworkText" with function grabbing "id=password" in html
     passwordText.value = password;   //setting value to password
   }
+
+  
+// Creates function generatePassword that asks for the number of characters desired, returns alert message if it does not fulfill requirements and generates password string
+function generatePassword() {
+  var password = ''   //Create password variable that is an empty string
+  var characterPool = []
+  var passLengthString = prompt("How many characters on the password?")
+  var passLength = parseInt(passLengthString, 10) // converts length from string to integer
+      console.log(passLength)
+      if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
+        alert("Password length must be a number between 8 and 128 characters. Try again.");
+        return
+      }
